@@ -1,4 +1,4 @@
-Bash Arithmetic Calculator
+Bash Script Calculator
 ==========================
 
 This is a simple bash script that acts as a math calculator. It reads input from a text file, performs arithmetic operations, and saves the results in an output file.
