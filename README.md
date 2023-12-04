@@ -57,9 +57,7 @@ Usage
 Directory Structure
 -------------------
 
-    ```plaintext
     calculator/ |-- calculator.sh |-- input.txt |-- Makefile |-- output.txt |-- README.md
-    ```
 
 Contributing
 ------------
