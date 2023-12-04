@@ -14,11 +14,15 @@ Usage
 
 1.  Clone the repository:
 
-    `git clone https://github.com/Vikranth3140/Bash-Script-Calculator.git`
-    
+    ```bash
+    git clone https://github.com/Vikranth3140/Bash-Script-Calculator.git
+    ```
+
 2.  Navigate to the project directory:
 
-    `cd calculator`
+    ```bash
+    cd calculator
+    ```
     
 3.  Place your input in a file named `input.txt` with the following format:
 
@@ -34,8 +38,10 @@ Usage
 
 4.  Run the calculator script using the Makefile:
 
-    `make`
-    
+    ```bash
+    make
+    ```
+
     The results will be saved in the `output.txt` file.
 
 
@@ -51,7 +57,7 @@ Usage
 Directory Structure
 -------------------
 
-``calculator/ |-- calculator.sh |-- input.txt |-- Makefile |-- output.txt |-- README.md``
+    calculator/ |-- calculator.sh |-- input.txt |-- Makefile |-- output.txt |-- README.md
 
 Contributing
 ------------
@@ -65,5 +71,3 @@ Welcome to contribute to the Bash Arithmetic Calculator! Feel free to fork the r
 5.  Submit a pull request.
 
 Thank you for your contributions!
-
-* * *
