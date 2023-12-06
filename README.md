@@ -72,7 +72,7 @@ Directory Structure
 Contributing
 ------------
 
-Welcome to contribute to the Bash Arithmetic Calculator! Feel free to fork the repository, make UI enhancements, or suggest any improvements. To contribute, follow these steps:
+Welcome to contribute to the Bash Script Calculator! Feel free to fork the repository, make UI enhancements, or suggest any improvements. To contribute, follow these steps:
 
 1.  Fork the repository.
 2.  Create a new branch for your feature or bug fix.
