@@ -33,6 +33,11 @@ Usage
     3 9 division
     1 3 xor
     5 1 compare
+    4 2 power
+    16 sqrt
+    10 3 modulus
+    -8 absolute
+    100 logarithm
     ```
     Each line should contain two numbers and an operation.
 
@@ -47,12 +52,17 @@ Usage
 
 ### Operations
 
-*   `sum`: Get the sum of two numbers.
-*   `difference`: Get the difference of two numbers.
-*   `product`: Get the product of two numbers.
-*   `division`: Get the division of two numbers.
-*   `xor`: Get the XOR of two numbers.
-*   `compare`: Get the bigger number from two given numbers.
+* `sum`: Get the sum of two numbers.
+* `difference`: Get the difference of two numbers.
+* `product`: Get the product of two numbers.
+* `division`: Get the division of two numbers.
+* `xor`: Get the XOR of two numbers.
+* `compare`: Get the bigger number from two given numbers.
+* `power`: Get the result of raising the first number to the power of the second.
+* `sqrt`: Get the square root of a number.
+* `modulus`: Get the remainder of the division of two numbers.
+* `absolute`: Get the absolute value of a number.
+* `logarithm`: Get the natural logarithm of a number.
 
 Directory Structure
 -------------------
