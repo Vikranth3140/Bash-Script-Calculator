@@ -3,7 +3,7 @@
 
 echo "Welcome to our Calculator!"
 
-
+# Addition function
 sum() {
     local x="$1"
     local y="$2"
@@ -11,6 +11,7 @@ sum() {
     echo "$c"
 }
 
+# Subtraction function
 difference() {
     local x="$1"
     local y="$2"
@@ -18,6 +19,7 @@ difference() {
     echo "$c"
 }
 
+# Multiplication function
 product() {
     local x="$1"
     local y="$2"
@@ -25,13 +27,15 @@ product() {
     echo "$c"
 }
 
-division() {
+# Division function
+quotient() {
     local x="$1"
     local y="$2"
     c=$((x / y))
     echo "$c"
 }
 
+# Xor function
 xor() {
     local x="$1"
     local y="$2"
@@ -39,6 +43,7 @@ xor() {
     echo "$c"
 }
 
+# Compare function
 compare() {
     local x="$1"
     local y="$2"
@@ -47,6 +52,43 @@ compare() {
     else
         c=$y
     fi
+    echo "$c"
+}
+
+# Power function
+power() {
+    local x="$1"
+    local y="$2"
+    c=$(echo "$x ^ $y" | bc)
+    echo "$c"
+}
+
+# Square root function
+sqrt() {
+    local x="$1"
+    c=$(echo "sqrt($x)" | bc)
+    echo "$c"
+}
+
+# Modulus function
+modulus() {
+    local x="$1"
+    local y="$2"
+    c=$((x % y))
+    echo "$c"
+}
+
+# Absolute value function
+absolute() {
+    local x="$1"
+    c=$(echo "$x" | awk '{ if ($1 >= 0) print $1; else print -$1 }')
+    echo "$c"
+}
+
+# Logarithm function
+logarithm() {
+    local x="$1"
+    c=$(echo "l($x)" | bc -l)
     echo "$c"
 }
 
@@ -69,8 +111,8 @@ while read -r a b s; do
         echo "Result: $c" >> output.txt
     fi
 
-    if [[ "$s" == "division" ]]; then
-        c=$(division "$a" "$b")
+    if [[ "$s" == "quotient" ]]; then
+        c=$(quotient "$a" "$b")
         echo "Result: $c" >> output.txt
     fi
 
@@ -83,5 +125,31 @@ while read -r a b s; do
         c=$(compare "$a" "$b")
         echo "Result: $c" >> output.txt
     fi
+    
+    if [[ "$s" == "power" ]]; then
+        c=$(power "$a" "$b")
+        echo "Result: $c" >> output.txt
+    fi
+    
+    if [[ "$s" == "sqrt" ]]; then
+        c=$(sqrt "$a")
+        echo "Result: $c" >> output.txt
+    fi
+    
+    if [[ "$s" == "modulus" ]]; then
+        c=$(modulus "$a" "$b")
+        echo "Result: $c" >> output.txt
+    fi
+    
+    if [[ "$s" == "absolute" ]]; then
+        c=$(absolute "$a")
+        echo "Result: $c" >> output.txt
+    fi
+    
+    if [[ "$s" == "logarithm" ]]; then
+        c=$(logarithm "$a")
+        echo "Result: $c" >> output.txt
+    fi
+
 
 done < "input.txt"
